@@ -67,14 +67,8 @@ a {
 
 .footer {
     position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 5px;
 }
 
 .relogio-container {
@@ -83,10 +77,15 @@ a {
 }
 
 .relogio {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
+    width: 100px;
     height: auto;
+    margin-right: 10px;
 }
 
-.relogio-container h1 {
-    margin-left: 10px; /* Espaçamento entre a imagem e o texto */
+.delivery {
+    color: rgb(0, 0, 0);
+}
+
+.hrs {
+    color: red;
 }
