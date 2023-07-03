@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/img/background_pizza.png);
+    background-color: rgb(46, 44, 44);
+    background-repeat: repeat-y;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topo {
+    background-color: red;
+    padding: 1vh;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.sabores{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sabores .q1 .conteudo{
+    top: 25%;
+}
+
+.sabores .q1 .sabor{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+    color: white;
+    font-family: Staatliches, Arial, Helvetica, sans-serif; 
+}
+
+.q1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .conteudo {
+    text-align: center;
+  }
+  
+  form {
+    font-size: 20px;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 5px;
+  }
+
+.sabores .q1 .conteudo{
+    position: relative;
+    background: rgba(193, 193, 193, 0.70);
+    width: 600px;
+    height: 500px;
+    align-items: center;
+}
+
+.sabores .q1 .conteudo img{
+    position: absolute;
+    width: 60%;
+    margin-top: 20px;
+    left: 20%;
+}
+
+.sabores .q1 .conteudo .pedir{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    bottom: 15px;
+    right: 10px;
+    left: 25px;
+    border: 0px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+}
+
+.sabores .q1 .conteudo .pedir:hover{
+    background-color: rgb(160, 160, 40);
+}
+
+@media screen and (max-width: 1250px) {
+    .sabores{
+        display: block;
+    }   
+
+    .sabores{
+        position: relative;
+        width: 100%;
+        left: calc(50% - 150px);
+    }
+
+    .sabores .q1{
+        margin-top: 20px;
+    }
+}

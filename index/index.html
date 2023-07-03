@@ -13,18 +13,25 @@
             <nav>
                 <h1 class="nav">
                     <img src="/img/pizza.png" alt="logo" class="logo">
-                    <a href="/salgadas/index.html">SALGADAS</a>
-                    <a href="/doces/index.html">DOCES</a>
-                    <a href="/combos/index.html">COMBOS</a>
-                    <a href="/bebidas/index.html">BEBIDAS</a>
+                    <a href="/salgadas/salgadas.html">SALGADAS</a>
+                    <a href="/doces/doces.html">DOCES</a>
+                    <a href="/combos/combos.html">COMBOS</a>
+                    <a href="/bebidas/bebidas.html">BEBIDAS</a>
+                    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
                 </h1>
+                <ul class="menu">
+                    <li><a href="/salgadas/salgadas.html"><strong>Salgadas</strong></a></li>
+                    <li><a href="/doces/doces.html"><strong>Doces</strong></a></li>
+                    <li><a href="/combos/combos.html"><strong>Combos</strong></a></li>
+                    <li><a href="/bebidas/bebidas.html"><strong>Bebidas</strong></a></li>
+                </ul>
             </nav>
         </header>
         <div class="main">
             <div class="pizzahub">
                 <h1 class="pizza">PIZZA</h1>
                 <h1 class="hub">HUB</h1>
-                <a class="pedido" href="salgadas.html"><strong>FAÇA SEU PEDIDO</strong></a>
+                <a class="pedido" href="/salgadas/salgadas.html"><strong>FAÇA SEU PEDIDO</strong></a>
             </div>
             <footer class="footer">
                 <div class="relogio-container">
@@ -34,5 +41,6 @@
             </footer>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
