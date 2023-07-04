@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/salgadas/img_salgadas/background_pizza.png);
+    background-color: rgb(46, 44, 44);
+    background-repeat: repeat-y;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topo {
+    text-align: center;
+    padding-top: 10px;
+    background-color: red;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav {
+    font-size: 40px;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: rgb(255, 230, 2);
+    font-size: 30px;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    display: none;
+    flex-direction: column;
+}
+
+.nav a {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav a:not(:has(img)) {
+        display: none;
+    }
+    
+    .menu-toggle:checked + .menu {
+        display: flex;
+    }
+}
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.sabores{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.sabores .q1 .conteudo{
+    top: 25%;
+}
+
+.sabores .q1 .sabor{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 36px;
+    color: white;
+    font-family: Staatliches, Arial, Helvetica, sans-serif; 
+}
+
+.sabores .q1 .conteudo{
+    position: relative;
+    background: rgba(193, 193, 193, 0.70);
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.sabores .q1 .conteudo img{
+    position: absolute;
+    width: 60%;
+    margin-top: 20px;
+    left: 20%;
+}
+
+.sabores .q1 .conteudo .descricao{
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    font-size: 25px;
+    color: white; 
+    font-family: Staatliches, Arial, Helvetica, sans-serif;;
+}
+
+.sabores .q1 .conteudo .pedir{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 15px;
+    right: 10px;
+    left: 100px;
+    border: 0px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+}
+
+.sabores .q1 .conteudo .pedir:hover{
+    background-color: rgb(160, 160, 40);
+}
+
+@media screen and (max-width: 1250px) {
+    .sabores{
+        display: block;
+    }   
+
+    .sabores{
+        position: relative;
+        width: 100%;
+        left: calc(50% - 150px);
+    }
+
+    .sabores .q1{
+        margin-top: 20px;
+    }
+}
