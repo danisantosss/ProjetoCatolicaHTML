@@ -132,7 +132,7 @@ a {
     position: absolute;
     width: 100px;
     height: 30px;
-    bottom: 15px; /* Valor alterado */
+    bottom: 15px;
     right: 10px;
     left: 100px;
     border: 0px;

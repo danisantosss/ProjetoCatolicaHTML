@@ -146,7 +146,7 @@ a {
     .pizza {
         font-size: 12vh;
         text-align: center;
-        margin: 0 auto; /* Adicione esta propriedade */
+        margin: 0 auto;
     }
 
     .hub {

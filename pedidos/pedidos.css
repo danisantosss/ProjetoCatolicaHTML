@@ -101,7 +101,7 @@ a {
 
 .logocart {
     width: 50px;
-    float: left; /* Posiciona a imagem à esquerda do texto */
+    float: left;
     margin: 7px;
     margin-right: 20px;
 }
@@ -231,7 +231,7 @@ input[type="text"] {
   .img-container {
     background-color: rgba(193, 193, 193, 0.70);
     border-radius: 60px;
-    padding: 15px; /* Ajuste o valor de acordo com o espaçamento desejado */
+    padding: 15px;
   }
   
   .delivery-img,
@@ -246,7 +246,7 @@ input[type="text"] {
 
   .line {
     border: none;
-    border-top: 2px solid  rgba(193, 193, 193, 0.70); /* Defina a cor desejada, por exemplo, gray */
+    border-top: 2px solid  rgba(193, 193, 193, 0.70);
   }
 
   .insira {
