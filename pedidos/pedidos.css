@@ -37,72 +37,83 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.sabores{
+.pedido{
     display: flex;
     justify-content: space-around;
 }
 
-.sabores .q1 .conteudo{
-    top: 25%;
+.compras {
+    top: 15%;
+    position: relative;
+    background: rgba(193, 193, 193, 0.70);
+    width: 600px;
+    height: 700px;
+    align-items: center;
 }
 
-.sabores .q1 .sabor{
+.carrinho {
     background-color: red;
-    text-align: center;
     padding: 10px;
     font-size: 36px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Staatliches, Arial, Helvetica, sans-serif; 
 }
 
-.q1 {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .conteudo {
+.logocart {
+    width: 50px;
+    float: left; /* Posiciona a imagem à esquerda do texto */
+    margin: 7px;
+    margin-right: 20px;
+}
+
+.calabresa {
+    margin: 15px;
+    width: 150px;
+    background: rgba(193, 193, 193, 0.70);
+}
+
+.entrega {
+    position: relative;
+    background: rgba(193, 193, 193, 0.70);
+    width: 600px;
+    height: 700px;
+    align-items: center;
+    top: 15%;
+}
+
+form {
     text-align: center;
-  }
-  
-  form {
     font-size: 20px;
     font-family: Staatliches, Arial, Helvetica, sans-serif;
     color: black;
     padding: 20px;
-  }
-  
-  .input-group {
+}
+
+.input-group {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
-  label {
+}
+
+label {
     width: 150px;
     margin-right: 10px;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
     width: 300px;
     padding: 5px;
-  }
-
-.sabores .q1 .conteudo{
-    position: relative;
-    background: rgba(193, 193, 193, 0.70);
-    width: 600px;
-    height: 500px;
-    align-items: center;
 }
 
-.sabores .q1 .conteudo img{
-    position: absolute;
-    width: 60%;
-    margin-top: 20px;
-    left: 20%;
+.forma {
+    background-color: red;
+    padding: 10px;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    font-family: Staatliches, Arial, Helvetica, sans-serif; 
 }
 
-.sabores .q1 .conteudo .pedir{
+.pedir{
     position: absolute;
     width: 250px;
     height: 30px;
@@ -117,22 +128,22 @@ a {
     font-family: Staatliches, Arial, Helvetica, sans-serif;
 }
 
-.sabores .q1 .conteudo .pedir:hover{
+.pedir:hover{
     background-color: rgb(160, 160, 40);
 }
 
 @media screen and (max-width: 1250px) {
-    .sabores{
+    .pedido{
         display: block;
     }   
 
-    .sabores{
+    .pedido{
         position: relative;
         width: 100%;
         left: calc(50% - 150px);
     }
 
-    .sabores .q1{
+    .pedido {
         margin-top: 20px;
     }
 }

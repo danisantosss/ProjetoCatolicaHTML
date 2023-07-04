@@ -100,6 +100,9 @@ a {
     color: rgb(0, 0, 0);
 }
 
+.pedido:hover {
+    background: rgb(219, 209, 69);
+}
 .footer {
     position: fixed;
     bottom: 5px;

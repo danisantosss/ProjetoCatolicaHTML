@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salgados</title>
+    <title>Pedidos</title>
     <link rel="stylesheet" href="pedidos.css">
 </head>
 <body>
@@ -16,18 +16,51 @@
                 <a href="/doces/doces.html">DOCES</a>
                 <a href="/combos/combos.html">COMBOS</a>
                 <a href="/bebidas/bebidas.html">BEBIDAS</a>
+                <a href="/pedidos/pedidos.html"><img src="/img/carrinho-de-compras.png" alt="logo" class="logo"></a>
             </h1>
         </nav>
     </header>
-    <div class="sabores">
+    <div class="pedido">
         <div class="q1">
-            <div class="conteudo">
-                <p class="sabor">CARRINHO</P>
+            <div class="compras">
+                <div class="imgcarrinho">
+                    <img src="/img/carrinho-de-compras.png" alt="logo" class="logocart">
+                    <p class="carrinho">CARRINHO</P>
+                </div>
+                <div class="conteudo">
+                    <p class="sabor">PIZZA DE CALABRESA</P>
+                    <select name="tamanhos" id="tamanhos">
+                        <option value="" disabled selected>SELECIONE O TAMANHO</option>
+                        <option value="pequena">PEQUENA (6 FATIAS)</option>
+                        <option value="media">MÉDIA (8 FATIAS)</option>
+                        <option value="grande">GRANDE (10 FATIAS)</option>
+                        <option value="familia">FAMÍLIA (12 FATIAS)</option>
+                    </select>
+                    <p class="valor">R$ --,--</p> 
+                    <img src="/salgadas/img_salgadas/pizza_calabresa 1.png" alt="Calabresa" class="calabresa">
+                </div>
+                <div class="conteudo">
+                    <p class="sabor">PIZZA DE SENSAÇÃO</P>
+                    <select name="tamanhos" id="tamanhos">
+                        <option value="" disabled selected>SELECIONE O TAMANHO</option>
+                        <option value="pequena">PEQUENA (6 FATIAS)</option>
+                        <option value="media">MÉDIA (8 FATIAS)</option>
+                        <option value="grande">GRANDE (10 FATIAS)</option>
+                        <option value="familia">FAMÍLIA (12 FATIAS)</option>
+                    </select>
+                    <p class="valor">R$ --,--</p>    
+                    <img src="/salgadas/img_salgadas/pizza_calabresa 1.png" alt="Calabresa" class="calabresa">
+                </div>
+                <div class="conteudo">
+                    <p class="valor">R$ 11,90</p> 
+                    <p class="sabor">COCA-COLA 2L</P>
+                    <img src="/salgadas/img_salgadas/pizza_calabresa 1.png" alt="Calabresa" class="calabresa">
+                </div>
             </div>
         </div>
         <div class="q1">
-            <div class="conteudo">
-                <p class="sabor">ESCOLHA A FORMA DE ENTREGA</p>
+            <div class="entrega">
+                <p class="forma">ESCOLHA A FORMA DE ENTREGA</p>
                 <form>
                     <div class="input-group">
                         <label for="cidade">CIDADE:</label>
