@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    background-image: url("/salgadas/img_salgadas/background_pizza.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.topo {
+    padding-top: 10px;
+    background-color: red;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav {
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: rgb(255, 230, 2);
+    font-size: 30px;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    display: none;
+    flex-direction: column;
+}
+
+.nav a {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav a:not(:has(img)) {
+        display: none;
+    }
+    
+    .menu-toggle:checked + .menu {
+        display: flex;
+    }
+}
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.square{
+    position: absolute;
+    display: block;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 800px;
+    height: 500px;
+    margin-left: calc(50% - 400px);
+    margin-top: calc(50% - 700px);
+    border-radius: 20px;
+}
+
+.square h3{
+    position: absolute;
+    left: calc(50% - 169px);
+    margin-top: 3%;
+    font-family: Staatliches;
+    font-size: 30px;
+}
+
+.square .check img{
+    position: absolute;
+    width: 350px;
+    left: calc(50% - 180px);
+    top: calc(50% - 200px);
+}
+
+.square .instrucao{
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 308px);
+    bottom: 15%;
+    font-family: Staatliches;
+    font-size: 25px;
+}
+
+.continuar{
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 150px;
+    background-color: red;
+    border: 1px;
+    cursor: pointer;
+    font-family: Staatliches;
+    font-size: 20px;
+    left: calc(50% - 75px);
+    color: antiquewhite;
+}
+
+.continuar:hover{
+    background-color: rgb(160, 160, 40);
+}
