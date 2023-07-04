@@ -61,10 +61,10 @@ a {
 }
 
 .total{
-    position: relative;
+    position: absolute;
     display: block;
-    left: calc(50% - 467px);
     margin-top: 10%;
+    left: calc(50% - 467px);
 }
 
 .total p{
@@ -92,6 +92,7 @@ a {
 }
 
 .total .informacoes{
+    position: absolute;
     display: block;
     background-color: gray;
     width: 935px;
