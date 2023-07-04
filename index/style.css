@@ -58,7 +58,7 @@ a {
     display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .nav {
         flex-wrap: wrap;
     }
@@ -100,7 +100,8 @@ a {
 }
 
 .pedido {
-    font-size: 4vh;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    font-size: 5vh;
     padding: 15px;
     border-radius: 30px;
     background: yellow;
@@ -134,4 +135,29 @@ a {
 
 .hrs {
     color: red;
+}
+
+@media (max-width: 1000px) {
+    .pizzahub {
+        margin: 10vh auto;
+        text-align: center;
+    }
+
+    .pizza {
+        font-size: 12vh;
+        text-align: center;
+        margin: 0 auto; /* Adicione esta propriedade */
+    }
+
+    .hub {
+        font-size: 12vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .pedido {
+        font-size: 3vh;
+        text-align: center;
+        margin: 0 auto;
+    }
 }

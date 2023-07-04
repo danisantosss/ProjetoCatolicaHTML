@@ -75,7 +75,6 @@ function hideMenuOnResize() {
     }
 }
 
-// Chame a função hideMenuOnResize sempre que a janela for redimensionada
 window.addEventListener('resize', hideMenuOnResize);
 
 function toggleMenu() {

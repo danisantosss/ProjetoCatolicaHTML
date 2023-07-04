@@ -115,20 +115,24 @@ a {
     left: 20%;
 }
 
-.sabores .q1 .conteudo .descricao{
+.sabores .q1 .conteudo .descricao {
     position: absolute;
     text-align: center;
-    bottom: 50px;
     font-size: 25px;
-    color: white; 
-    font-family: Staatliches, Arial, Helvetica, sans-serif;;
+    color: white;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sabores .q1 .conteudo .pedir{
+.sabores .q1 .conteudo .pedir {
     position: absolute;
     width: 100px;
     height: 30px;
-    bottom: 15px;
+    bottom: 15px; /* Valor alterado */
     right: 10px;
     left: 100px;
     border: 0px;
