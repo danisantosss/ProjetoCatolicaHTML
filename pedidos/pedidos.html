@@ -17,7 +17,15 @@
                 <a href="/combos/combos.html">COMBOS</a>
                 <a href="/bebidas/bebidas.html">BEBIDAS</a>
                 <a href="/pedidos/pedidos.html"><img src="/img/carrinho-de-compras.png" alt="logo" class="logo"></a>
+                <a href="/sobre/sobre.html"><img src="/img/ponto-de-interrogacao-em-um-fundo-preto-circular.png" alt="logo" class="logo"></a>
+                <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
             </h1>
+            <ul class="menu">
+                <li><a href="/salgadas/salgadas.html"><strong>Salgadas</strong></a></li>
+                <li><a href="/doces/doces.html"><strong>Doces</strong></a></li>
+                <li><a href="/combos/combos.html"><strong>Combos</strong></a></li>
+                <li><a href="/bebidas/bebidas.html"><strong>Bebidas</strong></a></li>
+            </ul>
         </nav>
     </header>
     <div class="pedido">
@@ -28,34 +36,41 @@
                     <p class="carrinho">CARRINHO</P>
                 </div>
                 <div class="conteudo">
-                    <p class="sabor">PIZZA DE CALABRESA</P>
-                    <select name="tamanhos" id="tamanhos">
-                        <option value="" disabled selected>SELECIONE O TAMANHO</option>
-                        <option value="pequena">PEQUENA (6 FATIAS)</option>
-                        <option value="media">MÉDIA (8 FATIAS)</option>
-                        <option value="grande">GRANDE (10 FATIAS)</option>
-                        <option value="familia">FAMÍLIA (12 FATIAS)</option>
-                    </select>
-                    <p class="valor">R$ --,--</p> 
                     <img src="/salgadas/img_salgadas/pizza_calabresa 1.png" alt="Calabresa" class="calabresa">
+                    <div class="descricao">
+                        <p class="sabor">PIZZA DE CALABRESA</P>
+                        <select name="tamanhos" id="tamanhosalgada" onchange="calcularTotal()">
+                            <option value="" disabled selected>SELECIONE O TAMANHO</option>
+                            <option value="pequena">PEQUENA (6 FATIAS)</option>
+                            <option value="media">MÉDIA (8 FATIAS)</option>
+                            <option value="grande">GRANDE (12 FATIAS)</option>
+                            <option value="familia">FAMÍLIA (16 FATIAS)</option>
+                        </select>
+                        <p class="valorsalgada">R$ --,--</p> 
+                    </div>
                 </div>
                 <div class="conteudo">
-                    <p class="sabor">PIZZA DE SENSAÇÃO</P>
-                    <select name="tamanhos" id="tamanhos">
-                        <option value="" disabled selected>SELECIONE O TAMANHO</option>
-                        <option value="pequena">PEQUENA (6 FATIAS)</option>
-                        <option value="media">MÉDIA (8 FATIAS)</option>
-                        <option value="grande">GRANDE (10 FATIAS)</option>
-                        <option value="familia">FAMÍLIA (12 FATIAS)</option>
-                    </select>
-                    <p class="valor">R$ --,--</p>    
-                    <img src="/salgadas/img_salgadas/pizza_calabresa 1.png" alt="Calabresa" class="calabresa">
+                    <img src="/doces/img_doces/169-1694321_cheese-pizza-cheese-pizza-png 15.png" alt="Sensação" class="calabresa">
+                    <div class="descricao">
+                        <p class="sabor">PIZZA DE SENSAÇÃO</P>
+                        <select name="tamanhos" id="tamanhodoce" onchange="calcularTotal()">
+                            <option value="" disabled selected>SELECIONE O TAMANHO</option>
+                            <option value="pequena">PEQUENA (6 FATIAS)</option>
+                            <option value="media">MÉDIA (8 FATIAS)</option>
+                            <option value="grande">GRANDE (12 FATIAS)</option>
+                            <option value="familia">FAMÍLIA (16 FATIAS)</option>
+                        </select>
+                        <p class="valordoce">R$ --,--</p>    
+                    </div>
                 </div>
                 <div class="conteudo">
-                    <p class="valor">R$ 11,90</p> 
-                    <p class="sabor">COCA-COLA 2L</P>
                     <img src="/salgadas/img_salgadas/pizza_calabresa 1.png" alt="Calabresa" class="calabresa">
+                    <div class="descricao">
+                        <p class="sabor">COCA-COLA 2L</p>
+                        <p class="valor">R$ 12,00</p> 
+                    </div>
                 </div>
+                <p id="total">Total: R$ --,--</p>
             </div>
         </div>
         <div class="q1">

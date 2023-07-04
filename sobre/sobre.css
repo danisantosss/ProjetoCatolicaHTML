@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');   
 
 *{
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -22,8 +23,9 @@ a {
 }
 
 .topo {
+    text-align: center;
+    padding-top: 10px;
     background-color: red;
-    padding: 1vh;
 }
 
 .logo {
@@ -31,6 +33,7 @@ a {
 }
 
 .nav {
+    font-size: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,24 +54,6 @@ a {
 
 .nav a {
     display: block;
-}
-
-@media (max-width: 768px) {
-    .nav {
-        flex-wrap: wrap;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
-    
-    .nav a {
-        display: none;
-    }
-    
-    .menu-toggle:checked + .menu {
-        display: flex;
-    }
 }
 
 .nav a:hover {
@@ -139,4 +124,42 @@ a {
     margin-top: 20px;
     font-size: 23px;
     font-family: Staatliches;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: rgb(255, 230, 2);
+    font-size: 30px;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    display: none;
+    flex-direction: column;
+}
+
+.nav a {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav a:not(:has(img)) {
+        display: none;
+    }
+    
+    .menu-toggle:checked + .menu {
+        display: flex;
+    }
 }
